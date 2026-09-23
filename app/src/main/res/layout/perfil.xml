@@ -12,7 +12,6 @@
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:src="@drawable/imagens"
         android:contentDescription="Logotipo" />
 
     <TextView
