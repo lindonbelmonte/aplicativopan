@@ -13,43 +13,31 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.aulaid)
+        setContentView(R.layout.exercicio_nota)
 
-        val notaP1 = findViewById<EditText>(R.id.editNota1)
-        val notaP2 = findViewById<EditText>(R.id.editNota2)
-        val resultado = findViewById<TextView>(R.id.txtResultado)
-        val botao = findViewById<Button>(R.id.btnCalcular)
-
-        botao.setOnClickListener {
-            resultado.text = "Media é: " + ((notaP1.text.toString().toFloat()
-                    + notaP2.text.toString().toFloat()) / 2).toString()
-
+        val btnexec1 = findViewById<Button>(R.id.btnexec1)
+        val edtexec1 = findViewById<EditText>(R.id.edtexec1)
+        val txtexec1 = findViewById<TextView>(R.id.txtexec1)
+        btnexec1.setOnClickListener {
+            var numero = edtexec1.text.toString().toInt() * 2
+            txtexec1.text = numero.toString()
         }
 
-        val peso = findViewById<EditText>(R.id.editPeso)
-        val altura = findViewById<EditText>(R.id.editAltura)
-        val resultadoimc = findViewById<TextView>(R.id.txtResultadoImc)
-        val botaoimc = findViewById<Button>(R.id.btnImc)
-
-        botaoimc.setOnClickListener {
-            val multiplica = (altura.text.toString().toFloat() * altura.text.toString().toFloat())
-            val imc = (peso.text.toString().toFloat()) / multiplica
-            resultadoimc.text = imc.toString()
-
-            if (imc < 18.5)
-            {
-                resultadoimc.text = imc.toString() + " Abaixo do peso"
-
-            } else if (imc >= 18.5 && imc <= 24.9)
-            {
-                resultadoimc.text = imc.toString() +  " sobrepeso"
-            }
-            else
-            {
-                resultadoimc.text = imc.toString() + " Obesidade"
-            }
+        val btnexec2 = findViewById<Button>(R.id.btnexec2)
+        val edtexec2 = findViewById<EditText>(R.id.edtexec2)
+        val txtexec2 = findViewById<TextView>(R.id.txtexec2)
+        btnexec2.setOnClickListener {
+            var idade = edtexec2.text.toString().toInt() * 365
+            txtexec2.text = "Você ja vivel aproximadamente " + idade.toString() + " Anos de idade"
         }
 
+        val btnexec3 = findViewById<Button>(R.id.btnexec3)
+        val edtexec3 = findViewById<EditText>(R.id.edtexec3)
+        val txtexec3 = findViewById<TextView>(R.id.txtexec3)
+        btnexec2.setOnClickListener {
+            var idade = edtexec2.text.toString().toInt() * 0.1
+            txtexec2.text = "Você ja vivel aproximadamente " + idade.toString() + " Anos de idade"
+        }
 
 
     }

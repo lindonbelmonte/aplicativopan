@@ -10,6 +10,11 @@
         android:layout_height="wrap_content"
         android:hint="Digite a nota P1"
         android:inputType="number"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#333333"
+    />
 
     <EditText
         android:id="@+id/editNota2"
