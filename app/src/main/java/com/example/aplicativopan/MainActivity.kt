@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             val valorconta = edtexec3.text.toString().toInt()
             val gorjeta = valorconta * 0.10
 
-            txtexec3.text = String.format(  "R$ %.2f",gorjeta)
+            txtexec3.text = String.format("R$ %.2f", gorjeta)
         }
 
         //4
