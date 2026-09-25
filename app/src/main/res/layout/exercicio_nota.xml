@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,253 +8,281 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="16dp">
 
-        <!-- EXERCÍCIO 1 -->
+        <!-- 1 -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 1: O Dobro do Número"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="O Dobro do Número"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
 
         <EditText
             android:id="@+id/edtexec1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite um número inteiro"
-            android:inputType="numberSigned" />
+            android:inputType="number" />
 
         <Button
             android:id="@+id/btnexec1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CALCULAR DOBRO" />
-
+            android:text="Calcular Dobro" />
 
         <TextView
             android:id="@+id/txtexec1"
-            android:layout_width="381dp"
-            android:layout_height="36dp"
-            android:paddingBottom="20dp"
-            android:text="Resultado aparecerá aqui" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background= "#333333"
-            android:text=""
-            />
+            android:background="#333333"
+            android:text="" />
 
-        <!-- EXERCÍCIO 2 -->
+
+        <!-- 2 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 2: Idade em Dias"
-            android:textSize="16sp"
+            android:text="Conversor de Idade para Dias"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
             android:id="@+id/edtexec2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite sua idade em anos"
+            android:hint="Digite sua idade"
             android:inputType="number" />
 
         <Button
             android:id="@+id/btnexec2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CALCULAR DIAS" />
+            android:text="Calcular Dias" />
 
         <TextView
             android:id="@+id/txtexec2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#333333"
-            android:text=""
-            />
+            android:text="" />
 
 
         <!-- EXERCÍCIO 3 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 3: Gorjeta (10%)"
-            android:textSize="16sp"
+            android:text="Calculadora de Gorjeta"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
-            android:id="@+id/etEx3"
+            android:id="@+id/edtexec3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor total da conta (ex: 80.50)"
+            android:hint="Valor da conta. Ex: 80.50"
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btnEx3"
+            android:id="@+id/btnexec3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CALCULAR GORJETA" />
+            android:text="Calcular 10%" />
 
         <TextView
-            android:id="@+id/tvEx3"
+            android:id="@+id/txtexec3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#333333"
-            android:text=""
-            />
+            android:text="" />
 
-        <!-- EXERCÍCIO 4 -->
+        <!-- 4 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 4: Dólar para Real (Câmbio fixo: 5.0)"
-            android:textSize="16sp"
+            android:text="Conversor de Dólar para Real"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
-            android:id="@+id/etEx4"
+            android:id="@+id/edtexec4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor em U$ Dólar"
+            android:hint="Digite o valor"
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btnEx4"
+            android:id="@+id/btnexec4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONVERTER MOEDA" />
+            android:text="Converter para Real" />
 
         <TextView
-            android:id="@+id/tvEx4"
+            android:id="@+id/txtexec4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#333333"
-            android:text=""
-            />
+            android:text="" />
 
-        <!-- EXERCÍCIO 5 -->
+        <!-- 5 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 4: Dólar para Real (Câmbio fixo: 5.0)"
-            android:textSize="16sp"
+            android:text="Média de Duas Notas"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
-            android:id="@+id/etEx4"
+            android:id="@+id/nota1exec5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor em U$ Dólar"
+            android:hint="Digite a Nota 1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/nota2exec5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a Nota 2"
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btnEx4"
+            android:id="@+id/btnexec5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONVERTER MOEDA" />
+            android:text="Calcular Média" />
 
         <TextView
-            android:id="@+id/tvEx4"
+            android:id="@+id/txtexec5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#333333"
-            android:text=""
-            />
+            android:text="" />
 
-        <!-- EXERCÍCIO 6 -->
+        <!-- 6 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 4: Dólar para Real (Câmbio fixo: 5.0)"
-            android:textSize="16sp"
+            android:text="Classificador por Idade"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
-            android:id="@+id/etEx4"
+            android:id="@+id/edtexec6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor em U$ Dólar"
-            android:inputType="numberDecimal" />
+            android:hint="Digite a idade"
+            android:inputType="number" />
 
         <Button
-            android:id="@+id/btnEx4"
+            android:id="@+id/btnexec6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONVERTER MOEDA" />
+            android:text="Classificar" />
 
         <TextView
-            android:id="@+id/tvEx4"
+            android:id="@+id/txtexec6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#333333"
-            android:text=""
-            />
+            android:text="" />
 
-        <!-- EXERCÍCIO 7 -->
+        <!-- 7 -->
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercício 4: Dólar para Real (Câmbio fixo: 5.0)"
-            android:textSize="16sp"
+            android:text="Desconto Progressivo"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp" />
 
         <EditText
-            android:id="@+id/etEx4"
+            android:id="@+id/edtexec7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor em U$ Dólar"
+            android:hint="Digite o valor da compra"
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btnEx4"
+            android:id="@+id/btnexec7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONVERTER MOEDA" />
+            android:text="Calcular Desconto" />
 
         <TextView
-            android:id="@+id/tvEx4"
+            android:id="@+id/txtexec7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado aparecerá aqui"
-            android:paddingBottom="20dp" />
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:padding="10dp" />
 
     </LinearLayout>
 
